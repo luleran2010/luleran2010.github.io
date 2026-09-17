@@ -1,3 +1,29 @@
 @use "./variables.scss" as *;
+@use "sass:color";
 
 // put your custom CSS here!
+.callout {
+    border: 1px solid vart(--border);
+    background-color: var(--bg);
+    border-radius: 0.5px;
+    padding: 0 1rem;
+    overflow-y: hidden;
+    box-sizing: border-box;
+
+  --callout-icon-education: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>');
+  --callout-icon-experience: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notebook"><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M16 2v20"/></svg>');
+    
+  &[data-callout="education"] {
+    --color: #00bfa5;
+    --border: #00bfa544;
+    --bg: #00bfa510;
+    --callout-icon: var(--callout-icon-education);
+  }
+
+  &[data-callout="experience"] {
+      --color: #448aff;
+      --border: #448aff44;
+      --bg: #448aff10;
+      --callout-icon: var(--callout-icon-experience);
+  }
+}

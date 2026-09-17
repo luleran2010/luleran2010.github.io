@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: Leran's Personal Website
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -17,7 +17,7 @@ configuration:
     cdnCaching: true
     typography:
       header: Schibsted Grotesk
-      body: Source Sans Pro
+      body: Noto Serif
       code: IBM Plex Mono
     colors:
       lightMode:
@@ -110,10 +110,16 @@ plugins:
     order: 92
   - source: "@quartz-community/quartz-fonts"
     enabled: true
-  - source: "@quartz-themes/core"
-    enabled: true
     options:
-      theme: default
+      useThemeFonts: false
+      fontOrigin: googleFonts
+      header: Schibsted Grotesk
+      body: Noto Serif
+      code: IBM Plex Mono
+  - source: "@quartz-themes/core"
+    enabled: false
+    options:
+      theme: "nord"
       mode: both
   - source: "@quartz-community/remove-draft"
     enabled: true
@@ -163,7 +169,7 @@ plugins:
       position: left
       priority: 50
   - source: "@quartz-community/graph"
-    enabled: true
+    enabled: false
     layout:
       position: right
       priority: 10
@@ -267,7 +273,7 @@ plugins:
       priority: 15
       display: all
   - source: "@quartz-community/obsidian-plugin-excalidraw"
-    enabled: true
+    enabled: false
     options:
       enableInteraction: true
       darkMode: auto
