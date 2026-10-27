@@ -1,5 +1,5 @@
 ---
-title: Welcome to Leran's Personal Website
+title: Welcome to Leran's Website
 ---
 
 # Aloha!
@@ -80,3 +80,5 @@ title: Welcome to Leran's Personal Website
 ## Get in Touch
 
 - Email: luleran2010@hotmail.com
+- GitHub: https://github.com/luleran2010
+- LinkedIn: [Leran Lu | LinkedIn](https://www.linkedin.com/in/leran-lu-427b97198/)
