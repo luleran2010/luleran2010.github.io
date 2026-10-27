@@ -1,7 +1,6 @@
 ---
 preview: "[[Pasted image 20261028001713.png]]"
 ---
-
 # SEFFO
 
 GitHub: [luleran2010/SEFFO: Algorithm for searching adsorption sites and configurations on 2D materials](https://github.com/luleran2010/SEFFO)

@@ -1,7 +1,6 @@
 ---
-preview: Pasted image 20261028001417.png
+preview: "[[Pasted image 20261028001417.png]]"
 ---
-
 # OurSport
 
 GitHub: [luleran2010/OurSport2026](https://github.com/luleran2010/OurSport2026)
